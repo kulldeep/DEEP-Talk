@@ -8,7 +8,11 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -19,13 +23,66 @@ html {
 
 body {
   margin-bottom: 60px;
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 50%);
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+.navbar {
+  backdrop-filter: saturate(150%) blur(8px);
+}
+
+.hero-section {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3956d9;
+  background: #eef2ff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+}
+
+.feature-card,
+.policy-card {
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+}
+
+.feature-list {
+  padding-left: 1.2rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.55rem;
+}
+
+.privacy-wrapper {
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.footer {
+  background: #ffffff;
+}
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
