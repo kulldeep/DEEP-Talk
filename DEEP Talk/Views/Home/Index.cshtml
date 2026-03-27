@@ -1,8 +1,29 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-section text-center text-lg-start">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <span class="hero-badge">DEEP Talk Platform</span>
+            <h1 class="display-4 fw-bold mt-3">Connect, Learn, and Grow Through Better Conversations.</h1>
+            <p class="lead text-muted mt-3">
+                DEEP Talk helps teams and communities build meaningful dialogue with a simple, modern web experience.
+            </p>
+            <div class="hero-actions mt-4 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+                <a class="btn btn-primary btn-lg px-4" asp-controller="Home" asp-action="Privacy">View Privacy</a>
+                <a class="btn btn-outline-secondary btn-lg px-4" href="https://learn.microsoft.com/aspnet/core" target="_blank" rel="noopener noreferrer">Learn ASP.NET Core</a>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="feature-card shadow-sm">
+                <h2 class="h4 mb-3">Quick Highlights</h2>
+                <ul class="feature-list mb-0">
+                    <li>Responsive design built with Bootstrap.</li>
+                    <li>Simple navigation for Home and Privacy content.</li>
+                    <li>Production-safe middleware with HTTPS + HSTS.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

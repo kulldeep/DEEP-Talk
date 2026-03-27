@@ -1,6 +1,35 @@
-﻿@{
+@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<section class="privacy-wrapper">
+    <h1 class="display-6 fw-semibold">@ViewData["Title"]</h1>
+    <p class="text-muted mb-4">We value transparency and responsible data handling.</p>
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <article class="policy-card h-100">
+                <h2 class="h5">Data We Collect</h2>
+                <p class="mb-0">Only information required to improve reliability, security, and user experience.</p>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="policy-card h-100">
+                <h2 class="h5">How We Use It</h2>
+                <p class="mb-0">To deliver core features, troubleshoot issues, and maintain platform safety.</p>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="policy-card h-100">
+                <h2 class="h5">Your Control</h2>
+                <p class="mb-0">You can request updates or deletion of your personal information when applicable.</p>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="policy-card h-100">
+                <h2 class="h5">Contact</h2>
+                <p class="mb-0">Reach out to our support team for privacy-related concerns and requests.</p>
+            </article>
+        </div>
+    </div>
+</section>
